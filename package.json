@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/TluwaniMS/node-js-basic-graphql-server/issues"
   },
-  "homepage": "https://github.com/TluwaniMS/node-js-basic-graphql-server#readme"
+  "homepage": "https://github.com/TluwaniMS/node-js-basic-graphql-server#readme",
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "graphql": "^16.1.0"
+  }
 }
