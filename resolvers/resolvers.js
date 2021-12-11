@@ -2,7 +2,7 @@ const { getAllDoctors } = require("../services/query-services");
 
 const resolvers = {
   Query: {
-    getAllDoctors: getAllDoctors()
+    getAllDoctors: getAllDoctors
   }
 };
 

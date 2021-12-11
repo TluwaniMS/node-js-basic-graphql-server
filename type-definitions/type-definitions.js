@@ -1,21 +1,21 @@
-const typeDefinitions = `
+const { gql } = require("apollo-server");
 
-type Query {
-    getAllDoctors:[Doctor!]!
-}
+const typeDefs = gql`
+  type Query {
+    getAllDoctors: [Doctor!]!
+  }
 
-type Doctor{
-    firstName:String!
-    lastName:String!
-    gender:String!
-    password:String!
-    email:String!
-    hospital:String!
-    specialty:String!
-}
-
+  type Doctor {
+    firstName: String!
+    lastName: String!
+    gender: String!
+    password: String!
+    email: String!
+    hospital: String!
+    specialty: String!
+  }
 `;
 
 module.exports = {
-  typeDefinitions
+  typeDefs
 };
