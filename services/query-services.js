@@ -1,7 +1,7 @@
-const { doctors } = require("../sample-data/sample-doctors-data");
+const { users } = require("../sample-data/sample-users-data");
 
-const getAllDoctors = () => doctors;
+const getAllUsers = () => users;
 
 module.exports = {
-  getAllDoctors
+  getAllUsers
 };
