@@ -6,6 +6,10 @@ const typeDefs = gql`
     getUserByEmail(email: String!): [User!]!
   }
 
+  type Mutation {
+    createUser(email: String!, firstName: String!, lastName: String!): String!
+  }
+
   type User {
     firstName: String!
     lastName: String!
