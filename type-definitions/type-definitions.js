@@ -1,5 +1,9 @@
 const typeDefinitions = `
 
+type Query {
+    getAllDoctors:[Doctor!]!
+}
+
 type Doctor{
     firstName:String!
     lastName:String!
@@ -11,3 +15,7 @@ type Doctor{
 }
 
 `;
+
+module.exports = {
+  typeDefinitions
+};

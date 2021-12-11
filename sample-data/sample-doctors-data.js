@@ -1,4 +1,4 @@
-const doctors = [
+const doctors = () => [
   {
     firstName: "Dean",
     lastName: "Hill",
