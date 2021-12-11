@@ -1,8 +1,9 @@
-const { getAllUsers } = require("../services/query-services");
+const { getAllUsers, getUserByEmail } = require("../services/query-services");
 
 const resolvers = {
   Query: {
-    getAllUsers: getAllUsers
+    getAllUsers: getAllUsers,
+    getUserByEmail: getUserByEmail
   }
 };
 
