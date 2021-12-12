@@ -6,4 +6,12 @@ const createUser = (parent, args) => {
   return `User with name ${user.firstName} has been created succesfully`;
 };
 
-module.exports = { createUser };
+const updateUser = (parent, args) => {
+  users.forEach((user) => {
+    user.email === args.email ? ((user.firstName = args.firstName), (user.lastName = args.lastName)) : "";
+  });
+
+  return `Update for user with email ${args.email} has been completed successfuly.`;
+};
+
+module.exports = { createUser, updateUser };
