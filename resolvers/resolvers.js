@@ -1,5 +1,5 @@
 const { getAllUsers, getUserByEmail } = require("../services/query-services");
-const { createUser, updateUser } = require("../services/mutation-services");
+const { createUser, updateUser, deleteUserByEmail } = require("../services/mutation-services");
 
 const resolvers = {
   Query: {
@@ -8,7 +8,8 @@ const resolvers = {
   },
   Mutation: {
     createUser: createUser,
-    updateUser: updateUser
+    updateUser: updateUser,
+    deleteUserByEmail: deleteUserByEmail
   }
 };
 

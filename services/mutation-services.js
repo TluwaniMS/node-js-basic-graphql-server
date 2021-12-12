@@ -14,4 +14,12 @@ const updateUser = (parent, args) => {
   return `Update for user with email ${args.email} has been completed successfuly.`;
 };
 
-module.exports = { createUser, updateUser };
+const deleteUserByEmail = (parent, args) => {
+  const selectedUser = users.filter((user) => user.email === args.email)[0];
+  const usersIndex = users.indexOf(selectedUser);
+  users.splice(usersIndex, 1);
+
+  return `User has been deleted successfully`;
+};
+
+module.exports = { createUser, updateUser, deleteUserByEmail };
